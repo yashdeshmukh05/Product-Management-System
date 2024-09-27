@@ -1,6 +1,8 @@
-package com.pheonix.productManagementSystem.Product;
+package com.pheonix.productManagementSystem.Product.Controller;
 
 import com.pheonix.productManagementSystem.Entity.Product;
+import com.pheonix.productManagementSystem.Product.ProductException;
+import com.pheonix.productManagementSystem.Product.Service.ProductService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +38,7 @@ public class UserProductController {
 
 
     @GetMapping("/products/id/{productId}")
-    public ResponseEntity<Product> findProductByIdHandler(@PathVariable Long productId) throws ProductException{
+    public ResponseEntity<Product> findProductByIdHandler(@PathVariable Long productId) throws ProductException {
 
         Product product=productService.findProductById(productId);
 

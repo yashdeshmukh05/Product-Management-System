@@ -1,6 +1,8 @@
-package com.pheonix.productManagementSystem.Product;
+package com.pheonix.productManagementSystem.Product.Service;
 
 import com.pheonix.productManagementSystem.Entity.Product;
+import com.pheonix.productManagementSystem.Product.CreateProductRequest;
+import com.pheonix.productManagementSystem.Product.ProductException;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 

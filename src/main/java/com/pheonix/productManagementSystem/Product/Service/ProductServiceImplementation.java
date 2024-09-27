@@ -1,7 +1,9 @@
-package com.pheonix.productManagementSystem.Product;
+package com.pheonix.productManagementSystem.Product.Service;
 
 import com.pheonix.productManagementSystem.Entity.Category;
 import com.pheonix.productManagementSystem.Entity.Product;
+import com.pheonix.productManagementSystem.Product.CreateProductRequest;
+import com.pheonix.productManagementSystem.Product.ProductException;
 import com.pheonix.productManagementSystem.Repository.CategoryRepository;
 import com.pheonix.productManagementSystem.Repository.ProductRepository;
 import com.pheonix.productManagementSystem.Repository.UserRepository;

@@ -1,6 +1,7 @@
-package com.pheonix.productManagementSystem.UserAuthentication;
+package com.pheonix.productManagementSystem.UserAuthentication.Service;
 
 import com.pheonix.productManagementSystem.Entity.User;
+import com.pheonix.productManagementSystem.UserAuthentication.UserException;
 
 public interface UserService {
 

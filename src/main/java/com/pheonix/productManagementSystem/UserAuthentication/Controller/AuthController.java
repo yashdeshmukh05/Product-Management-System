@@ -1,7 +1,9 @@
-package com.pheonix.productManagementSystem.UserAuthentication;
+package com.pheonix.productManagementSystem.UserAuthentication.Controller;
 
 import com.pheonix.productManagementSystem.Entity.User;
 import com.pheonix.productManagementSystem.Repository.UserRepository;
+import com.pheonix.productManagementSystem.UserAuthentication.*;
+import com.pheonix.productManagementSystem.config.JwtTokenProvider;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,7 +36,7 @@ public class AuthController {
         }
 
         @PostMapping("/signup")
-        public ResponseEntity<AuthResponse> createUserHandler(@Valid @RequestBody User user) throws UserException{
+        public ResponseEntity<AuthResponse> createUserHandler(@Valid @RequestBody User user) throws UserException {
 
             String email = user.getEmail();
             String password = user.getPassword();

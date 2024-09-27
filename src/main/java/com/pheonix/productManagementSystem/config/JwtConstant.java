@@ -1,4 +1,4 @@
-package com.pheonix.productManagementSystem.UserAuthentication;
+package com.pheonix.productManagementSystem.config;
 
 public class JwtConstant {
 

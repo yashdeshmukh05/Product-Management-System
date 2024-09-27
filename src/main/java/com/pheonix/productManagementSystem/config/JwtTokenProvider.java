@@ -1,4 +1,4 @@
-package com.pheonix.productManagementSystem.UserAuthentication;
+package com.pheonix.productManagementSystem.config;
 
 import java.util.Collection;
 import java.util.Date;

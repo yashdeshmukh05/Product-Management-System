@@ -1,6 +1,10 @@
-package com.pheonix.productManagementSystem.Product;
+package com.pheonix.productManagementSystem.Product.Controller;
 
 import com.pheonix.productManagementSystem.Entity.Product;
+import com.pheonix.productManagementSystem.Product.ApiResponse;
+import com.pheonix.productManagementSystem.Product.CreateProductRequest;
+import com.pheonix.productManagementSystem.Product.ProductException;
+import com.pheonix.productManagementSystem.Product.Service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +22,7 @@ public class AdminProductController {
     }
 
     @PostMapping("/")
-    public ResponseEntity<Product> createProductHandler(@RequestBody CreateProductRequest req) throws ProductException{
+    public ResponseEntity<Product> createProductHandler(@RequestBody CreateProductRequest req) throws ProductException {
 
         Product createdProduct = productService.createProduct(req);
 
